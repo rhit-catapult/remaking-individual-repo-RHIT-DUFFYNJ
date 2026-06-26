@@ -70,7 +70,6 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((1000, 800))
     pygame.display.set_caption('Bouncing Ball (Try grabbing a ball)')
-    screen.fill(pygame.Color('gray'))
     clock = pygame.time.Clock()
 
     balls_list = []
@@ -98,7 +97,7 @@ def main():
         #advance frame          
         pygame.mouse.get_rel()
         clock.tick(60)
-        screen.fill(pygame.Color('gray'))
+        screen.fill(pygame.Color('white'))
 
         for ball in balls_list:
             if  ball.get_held():
